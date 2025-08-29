@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imunização — Sistema Imunológico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg border-bottom sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="fs-5">🧫</span>
+                <span>Sistema Imunológico</span>
+            </a>
+            <div class="d-flex align-items-center" id="modo-navbar">
+                <span class="fw-semibold small me-2">Escolha o modo:</span>
+                <button id="cor_preta" class="btn btn-dark btn-sm d-inline-flex align-items-center gap-1"
+                    style="display:none;">
+                    <i class="bi bi-moon"></i> Escuro
+                </button>
+                <button id="cor_branco" class="btn btn-light btn-sm d-inline-flex align-items-center gap-1 border"
+                    style="display:none;">
+                    <i class="bi bi-brightness-high"></i> Claro
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-4">
+        <div class="hero">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h1 class="display-6 fw-bold mb-3">Imunização</h1>
+                    <p class="lead mb-4">Saiba como vacinas e soros protegem o organismo contra doenças.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#conteudo" class="btn btn-primary btn-lg"><i class="bi bi-journal-text me-2"></i>Ver
+                            explicação</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class='img-fluid rounded shadow-sm' src='assets/imunizacao.gif' alt='Imunização'>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5" id="conteudo">
+        <div class="row">
+            <main class="col-lg-8">
+    <section id="imunizacao" class="py-4">
+        <h3 class="h5 section-title">O que é Imunização?</h3>
+        <div class="section-summary">
+            <p>A imunização é o processo pelo qual o organismo adquire proteção contra doenças infecciosas, ativando o sistema imunológico para reconhecer e combater agentes invasores, como vírus, bactérias e toxinas. Esse processo é essencial para a prevenção de doenças e pode ocorrer de forma natural, após contato com o agente infeccioso, ou de forma artificial, por meio de vacinas e soros. A imunização desempenha um papel crucial na saúde pública, ajudando a reduzir a propagação de epidemias, prevenindo complicações graves e aumentando a expectativa de vida. Ela funciona estimulando o sistema imunológico a produzir anticorpos ou células de memória, garantindo uma resposta rápida e eficaz em futuras exposições ao mesmo agente infeccioso.</p>
+        </div>
+    </section>
+
+    <section id="imunizacao-ativa" class="py-4">
+        <h3 class="h5 section-title">Imunização Ativa</h3>
+        <div class="section-summary">
+            <p>A imunização ativa ocorre quando o próprio organismo produz anticorpos e células de memória após ser exposto a um antígeno. Isso pode acontecer naturalmente, após a infecção por um microrganismo, ou artificialmente, através da administração de vacinas. Vacinas vivas atenuadas, inativadas ou de subunidades proteicas estimulam o sistema imunológico a reconhecer o agente infeccioso sem causar a doença, promovendo uma proteção duradoura. Esse tipo de imunização é fundamental para a prevenção de doenças como sarampo, poliomielite, hepatite B e influenza. A imunização ativa é eficiente a longo prazo, pois cria uma memória imunológica que permite ao organismo responder rapidamente a futuras exposições ao mesmo patógeno.</p>
+        </div>
+    </section>
+
+    <section id="imunizacao-passiva" class="py-4">
+        <h3 class="h5 section-title">Imunização Passiva</h3>
+        <div class="section-summary">
+            <p>Na imunização passiva, o indivíduo recebe anticorpos prontos, geralmente através de soros ou imunoglobulinas, proporcionando proteção imediata contra agentes infecciosos. Diferente da imunização ativa, ela não estimula a produção de memória imunológica pelo próprio organismo, tornando sua proteção temporária. A imunização passiva é utilizada em situações de risco imediato, como em casos de exposição a toxinas (ex.: tétano) ou durante surtos de doenças infecciosas, oferecendo uma resposta rápida enquanto o corpo ainda não produziu seus próprios anticorpos. Esse método é essencial para prevenir complicações graves e salvar vidas em situações de emergência epidemiológica.</p>
+        </div>
+    </section>
+</main>
+
+<aside class="col-lg-4">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h3 class="h6 fw-bold">Navegação rápida</h3>
+            <ul class="small mb-0">
+                <li><a href="#imunizacao">O que é Imunização?</a></li>
+                <li><a href="#imunizacao-ativa">Imunização Ativa</a></li>
+                <li><a href="#imunizacao-passiva">Imunização Passiva</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+        </div>
+    </section>
+
+    <footer class="border-top py-4 mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0">&copy; Sistema Imunológico. Todos os direitos reservados.</p>
+            <p class="mb-0 small">Construído com <a href="https://getbootstrap.com/" class="link-primary">Bootstrap
+                    5</a>.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>

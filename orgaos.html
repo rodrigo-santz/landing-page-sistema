@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Órgãos — Sistema Imunológico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg border-bottom sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="fs-5">🧫</span>
+                <span>Sistema Imunológico</span>
+            </a>
+            <div class="d-flex align-items-center" id="modo-navbar">
+                <span class="fw-semibold small me-2">Escolha o modo:</span>
+                <button id="cor_preta" class="btn btn-dark btn-sm d-inline-flex align-items-center gap-1"
+                    style="display:none;">
+                    <i class="bi bi-moon"></i> Escuro
+                </button>
+                <button id="cor_branco" class="btn btn-light btn-sm d-inline-flex align-items-center gap-1 border"
+                    style="display:none;">
+                    <i class="bi bi-brightness-high"></i> Claro
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-4">
+        <div class="hero">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h1 class="display-6 fw-bold mb-3">Órgãos do Sistema Imunológico</h1>
+                    <p class="lead mb-4">Conheça os órgãos responsáveis pela produção e maturação das células de defesa.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#conteudo" class="btn btn-primary btn-lg"><i class="bi bi-journal-text me-2"></i>Ver
+                            explicação</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class='img-fluid rounded shadow-sm' src='assets/orgaos.png'
+                        alt='Órgãos do Sistema Imunológico'>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5" id="conteudo">
+        <div class="row">
+            <main class="col-lg-8">
+                <section id="orgaos-primarios" class="py-4">
+                    <h3 class="h5 section-title">Órgãos Primários</h3>
+                    <div class="section-summary">
+                        <p>Os órgãos primários do sistema imunológico são responsáveis pela produção, desenvolvimento e
+                            maturação das células de defesa do organismo. A medula óssea, localizada no interior dos
+                            ossos, é o principal local de produção de leucócitos, incluindo linfócitos B e T, bem como
+                            de outras células sanguíneas essenciais. O timo, por sua vez, é fundamental para a maturação
+                            dos linfócitos T, que posteriormente desempenharão funções cruciais na imunidade adaptativa.
+                            Esses órgãos garantem que o corpo tenha um estoque de células imunológicas competentes,
+                            prontas para reconhecer e combater invasores, além de manter a diversidade necessária para
+                            responder a diferentes tipos de antígenos.</p>
+                    </div>
+                </section>
+
+                <section id="orgaos-secundarios" class="py-4">
+                    <h3 class="h5 section-title">Órgãos Secundários</h3>
+                    <div class="section-summary">
+                        <p>Os órgãos secundários do sistema imunológico são responsáveis pela ativação, proliferação e
+                            coordenação das células de defesa. Entre eles estão os linfonodos, que filtram linfa e
+                            detectam antígenos; o baço, que filtra o sangue e remove células danificadas ou infectadas;
+                            as tonsilas e adenoides, que protegem as vias respiratórias; e as placas de Peyer,
+                            localizadas no intestino, que monitoram antígenos presentes no trato digestivo. Esses órgãos
+                            funcionam como centros de comunicação e treinamento para os leucócitos, promovendo respostas
+                            imunes rápidas e específicas quando o organismo é exposto a patógenos.</p>
+                    </div>
+                </section>
+
+                <section id="funcoes-orgaos" class="py-4">
+                    <h3 class="h5 section-title">Funções dos Órgãos</h3>
+                    <div class="section-summary">
+                        <p>Cada órgão do sistema imunológico desempenha funções específicas que garantem a proteção do
+                            organismo. Os órgãos primários produzem e maturam células imunológicas competentes, enquanto
+                            os órgãos secundários ativam essas células quando detectam ameaças. Além disso, alguns
+                            órgãos filtram o sangue ou a linfa, removendo microrganismos, resíduos celulares e células
+                            danificadas. Outros armazenam leucócitos e linfócitos prontos para resposta rápida,
+                            permitindo que o corpo reaja eficientemente a infecções. A integração entre órgãos primários
+                            e secundários é essencial para manter o equilíbrio imunológico, prevenir doenças e garantir
+                            respostas coordenadas e eficazes a invasores.</p>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="col-lg-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold">Navegação rápida</h3>
+                        <ul class="small mb-0">
+                            <li><a href="#orgaos-primarios">Órgãos Primários</a></li>
+                            <li><a href="#orgaos-secundarios">Órgãos Secundários</a></li>
+                            <li><a href="#funcoes-orgaos">Funções dos Órgãos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <footer class="border-top py-4 mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0">&copy; Sistema Imunológico. Todos os direitos reservados.</p>
+            <p class="mb-0 small">Construído com <a href="https://getbootstrap.com/" class="link-primary">Bootstrap
+                    5</a>.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

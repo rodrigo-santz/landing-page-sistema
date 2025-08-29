@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema Imunológico — Versão Profissional (Ver Mais incluído)</title>
+  <meta name="description" content="Conteúdo organizado e responsivo sobre o sistema imunológico, com Bootstrap 5.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <span class="fs-5">🧫</span>
+        <span>Sistema Imunológico</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <div class="d-flex align-items-center ms-3" id="modo-navbar">
+          <span class="fw-semibold small me-2">Escolha o modo:</span>
+          <button id="cor_preta" class="btn btn-dark btn-sm d-inline-flex align-items-center gap-1"
+            style="display:none;">
+            <i class="bi bi-moon"></i> Escuro
+          </button>
+          <button id="cor_branco" class="btn btn-light btn-sm d-inline-flex align-items-center gap-1 border"
+            style="display:none;">
+            <i class="bi bi-brightness-high"></i> Claro
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container my-4">
+    <div class="hero">
+      <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between g-4">
+        <div class="">
+          <h1 class="display-6 fw-bold mb-3">Sistema Imunológico</h1>
+          <p class="lead mb-4">O sistema imunológico é a defesa natural do corpo contra vírus, bactérias, fungos e
+            outros agentes que podem causar doenças. Formado por células, tecidos e órgãos que atuam em conjunto, ele
+            identifica e combate microrganismos invasores, mantendo o organismo protegido e saudável. Entender como
+            funciona o sistema imunológico é essencial para cuidar da saúde, fortalecer a imunidade e prevenir
+            infecções.</p>
+          <p>Logo abaixo, você encontrará tópicos detalhados que explicam seus principais componentes, funções e
+            curiosidades.</p>
+          <div class="d-flex gap-2">
+            <a href="#conteudo" class="btn btn-primary btn-lg"><i class="bi bi-journal-text me-2"></i>Ver conteúdo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <figure class="container text-center my-4" id="fig-sistema">
+    <img src="assets/sistema.jpg" alt="Ilustração do sistema imunológico humano, destacando células e órgãos de defesa"
+      class="img-fluid rounded shadow-sm" style="width:600px; height:400px; object-fit:cover;">
+    <figcaption class="mt-2 text-secondary small">Ilustração do sistema imunológico humano, mostrando células e órgãos
+      de defesa. Imagem local: sistema.jpg.</figcaption>
+  </figure>
+
+  <section class="container my-5" id="conteudo">
+    <div class="row">
+      <main class="col-12">
+        <section id="sec-0" >
+          <h2 class="h5 section-title">O Sistema Imunológico</h2>
+          <div class="section-summary"></div>
+        </section>
+        <section id="sec-1" class="py-4">
+          <h3 class="h5 section-title">
+            O sistema imunológico, por meio de células especializadas, é responsável pela defesa do organismo contra
+            invasores
+            externos, como vírus, bactérias, fungos, parasitas e diversas substâncias nocivas. Esse conjunto de
+            mecanismos de
+            proteção trabalha de forma integrada para reconhecer, atacar e eliminar ameaças, garantindo o equilíbrio e a
+            manutenção da saúde.
+          </h3>
+
+          <p>
+            Além de proteger o corpo contra agentes externos, o sistema imunológico desempenha funções essenciais no dia
+            a dia,
+            como a cicatrização de feridas, a remoção de células danificadas e a prevenção de infecções recorrentes.
+            Ele é formado por diferentes tipos de células, como linfócitos, macrófagos e neutrófilos, e por órgãos
+            fundamentais,
+            como linfonodos, baço e medula óssea.
+            Compreender o funcionamento do sistema imunológico é fundamental para manter uma vida saudável, fortalecer a
+            imunidade
+            e prevenir doenças.
+          </p>
+
+          <div class="section-summary">
+            <br />
+            <p class="textoIntroducao">
+              Neste site, você encontrará diferentes categorias e tópicos essenciais para compreender em detalhes como
+              funciona o sistema imunológico, seus principais componentes, funções, curiosidades e a importância de
+              manter uma imunidade fortalecida no dia a dia.
+            </p>
+          </div>
+          <div class="collapse mt-3" id="more-sec-1">
+            <div id="cards-list" class="d-flex flex-column gap-3">
+              <a href="antigenos_anticorpos.html" class="text-decoration-none link-card-anim w-100"
+                style="max-width:420px;">
+                <div class="card shadow-sm border-0 link-card" style="opacity:0; transform:translateY(30px);">
+                  <div class="card-body d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 text-primary"></i>
+                    <span class="fw-semibold">Antígenos e Anticorpos</span>
+                  </div>
+                </div>
+              </a>
+              <a href="celulas.html" class="text-decoration-none link-card-anim w-100" style="max-width:420px;">
+                <div class="card shadow-sm border-0 link-card" style="opacity:0; transform:translateY(30px);">
+                  <div class="card-body d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 text-success"></i>
+                    <span class="fw-semibold">Células</span>
+                  </div>
+                </div>
+              </a>
+              <a href="orgaos.html" class="text-decoration-none link-card-anim w-100" style="max-width:420px;">
+                <div class="card shadow-sm border-0 link-card" style="opacity:0; transform:translateY(30px);">
+                  <div class="card-body d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 text-warning"></i>
+                    <span class="fw-semibold">Órgãos</span>
+                  </div>
+                </div>
+              </a>
+              <a href="imunizacao.html" class="text-decoration-none link-card-anim w-100" style="max-width:420px;">
+                <div class="card shadow-sm border-0 link-card" style="opacity:0; transform:translateY(30px);">
+                  <div class="card-body d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 text-danger"></i>
+                    <span class="fw-semibold">Imunização</span>
+                  </div>
+                </div>
+              </a>
+              <a href="sistema_acao.html" class="text-decoration-none link-card-anim w-100" style="max-width:420px;">
+                <div class="card shadow-sm border-0 link-card" style="opacity:0; transform:translateY(30px);">
+                  <div class="card-body d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-right-circle-fill fs-3 text-info"></i>
+                    <span class="fw-semibold">O sistema em ação</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="btn btn-vermais mt-2 px-4 py-2 fw-semibold shadow-sm" data-bs-toggle="collapse"
+            data-bs-target="#more-sec-1" aria-expanded="false" aria-controls="more-sec-1" id="btn-vermais-anim"
+            style="transition:margin-top 0.3s;">
+            <span class="me-2">Ver mais</span> <i class="bi bi-chevron-double-down" id="icon-vermais"></i>
+          </button>
+        </section>
+        <section id="sec-2" class="py-4">
+          <h3 class="h5 section-title">Trabalho de Ferramentas da Web</h3>
+          <div class="section-summary">
+            <h6>Desenvolvido por: ...</h6>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+  </section>
+
+  <footer class="border-top py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0">&copy; Sistema Imunológico. Todos os direitos reservados.</p>
+      <p class="mb-0 small">Construído com <a href="https://getbootstrap.com/" class="link-primary">Bootstrap 5</a>.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

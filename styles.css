@@ -1,0 +1,193 @@
+@media (max-width: 991.98px) {
+  #cards-list {
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+/* styles.css — Tema profissional para "Sistema Imunológico"
+   - Paleta suave e profissional com ênfase em legibilidade
+   - Espaçamentos generosos e tipografia clara
+   - Overrides mínimos do Bootstrap para manter consistência
+*/
+:root {
+  --brand: #2563eb;
+  /* Azul profissional */
+  --brand-2: #0ea5e9;
+  /* Azul claro */
+  --ink: #0f172a;
+  /* Texto principal (slate-900) */
+  --muted: #475569;
+  /* Texto secundário */
+  --bg: #f8fafc;
+  /* Fundo */
+  --card: #ffffff;
+  /* Cartões */
+  --accent: #22c55e;
+  /* Acentos (verde) */
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  letter-spacing: .1px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(37, 99, 235, .08), rgba(14, 165, 233, .08));
+  border-radius: 1.25rem;
+  padding: 3rem 2rem;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.lead {
+  color: var(--muted);
+}
+
+.card {
+  border: 1px solid rgba(2, 6, 23, 0.06);
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.05);
+  border-radius: 1rem;
+}
+
+.icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+}
+
+footer {
+  color: var(--muted);
+}
+
+/* CSS PROPRIO */
+.link-card-anim .card {
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.4s;
+}
+
+.link-card-anim.clicked .card {
+  animation: cardClickAnim 0.4s;
+  box-shadow: 0 0 0 0.25rem #0d6efd33;
+  transform: scale(0.97);
+  opacity: 0;
+}
+
+@keyframes cardClickAnim {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 #0d6efd00;
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0.25rem #0d6efd33;
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 #0d6efd00;
+    opacity: 0;
+  }
+}
+
+.btn-vermais {
+  background: linear-gradient(90deg, #0d6efd 60%, #6ea8fe 100%);
+  color: #fff !important;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 #0d6efd22;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-vermais:hover,
+.btn-vermais:focus {
+  background: linear-gradient(90deg, #0b5ed7 60%, #3b82f6 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px 0 #0d6efd33;
+  text-decoration: none;
+}
+
+.btn-vermais i {
+  transition: transform 0.3s;
+}
+
+.btn-vermais[aria-expanded="true"] i {
+  transform: rotate(180deg) scale(1.2);
+}
+
+/* Setas coloridas nas listas, independente do modo */
+.bi-arrow-right-circle-fill.text-primary {
+  color: #0d6efd !important;
+}
+
+.bi-arrow-right-circle-fill.text-success {
+  color: #198754 !important;
+}
+
+.bi-arrow-right-circle-fill.text-warning {
+  color: #ffc107 !important;
+}
+
+.bi-arrow-right-circle-fill.text-danger {
+  color: #dc3545 !important;
+}
+
+.bi-arrow-right-circle-fill.text-info {
+  color: #0dcaf0 !important;
+}
+
+body.modo-escuro #cor_branco,
+body.modo-escuro #cor_branco *,
+body.modo-escuro #cor_branco i {
+  color: #111 !important;
+  fill: #111 !important;
+}
+
+body.modo-escuro * {
+  color: white !important;
+  border-color: #444 !important;
+}
+
+body.modo-escuro .card {
+  background-color: #232323 !important;
+}
+
+body.modo-escuro .card-body {
+  background-color: transparent !important;
+}
+
+body.modo-escuro main,
+body.modo-escuro main *,
+body.modo-escuro aside,
+body.modo-escuro aside *,
+body.modo-escuro footer,
+body.modo-escuro footer *,
+body.modo-escuro header,
+body.modo-escuro header * {
+ color: #fff !important;
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antígenos e Anticorpos — Sistema Imunológico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg border-bottom sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="fs-5">🧫</span>
+                <span>Sistema Imunológico</span>
+            </a>
+            <div class="d-flex align-items-center" id="modo-navbar">
+                <span class="fw-semibold small me-2">Escolha o modo:</span>
+                <button id="cor_preta" class="btn btn-dark btn-sm d-inline-flex align-items-center gap-1"
+                    style="display:none;">
+                    <i class="bi bi-moon"></i> Escuro
+                </button>
+                <button id="cor_branco" class="btn btn-light btn-sm d-inline-flex align-items-center gap-1 border"
+                    style="display:none;">
+                    <i class="bi bi-brightness-high"></i> Claro
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-4">
+        <div class="hero">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h1 class="display-6 fw-bold mb-3">Antígenos e Anticorpos</h1>
+                    <p class="lead mb-4">Descubra o papel fundamental dos antígenos e anticorpos na defesa do organismo.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#conteudo" class="btn btn-primary btn-lg"><i class="bi bi-journal-text me-2"></i>Ver
+                            explicação</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class='img-fluid rounded shadow-sm' src='assets/antigenos-e-anticorpos.png'
+                        alt='Antígenos e Anticorpos'>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5" id="conteudo">
+        <div class="row">
+            <main class="col-lg-8">
+                <section id="antigenos" class="py-4">
+                    <h3 class="h5 section-title">O que são Antígenos?</h3>
+                    <div class="section-summary">
+                        <p>Antígenos são substâncias ou moléculas reconhecidas pelo sistema imunológico como “estranhas”
+                            ao organismo. Eles podem ser provenientes de vírus, bactérias, fungos, parasitas ou toxinas
+                            produzidas por microrganismos, mas também podem incluir partículas não infecciosas, como
+                            pólen, células transplantadas ou até certas proteínas de alimentos. Quando um antígeno entra
+                            no corpo, ele é detectado por células especializadas do sistema imunológico, que iniciam uma
+                            resposta defensiva. Essa resposta é fundamental para proteger o organismo contra infecções,
+                            doenças autoimunes e até alguns tipos de câncer. O estudo dos antígenos é essencial para o
+                            desenvolvimento de vacinas, terapias imunológicas e testes diagnósticos, já que cada
+                            antígeno possui características únicas que determinam como o corpo irá reagir.</p>
+                    </div>
+                </section>
+
+                <section id="anticorpos" class="py-4">
+                    <h3 class="h5 section-title">O que são Anticorpos?</h3>
+                    <div class="section-summary">
+                        <p>Anticorpos, também chamados de imunoglobulinas, são proteínas produzidas pelos linfócitos B
+                            em resposta à presença de antígenos. Cada anticorpo possui uma estrutura específica que
+                            permite reconhecer e se ligar a um antígeno particular, garantindo que o sistema imunológico
+                            ataque apenas substâncias estranhas, sem prejudicar células saudáveis. Existem diferentes
+                            classes de anticorpos, como IgG, IgM, IgA, IgE e IgD, cada uma com funções específicas,
+                            desde neutralizar vírus e bactérias até mediar reações alérgicas ou defender mucosas. A
+                            produção de anticorpos é a base de muitas vacinas, pois a exposição controlada a um antígeno
+                            estimula o organismo a gerar anticorpos protetores, conferindo imunidade a longo prazo.
+                            Compreender os anticorpos é essencial para diagnósticos, terapias e prevenção de doenças
+                            infecciosas.</p>
+                    </div>
+                </section>
+
+                <section id="interacao" class="py-4">
+                    <h3 class="h5 section-title">Como ocorre a interação?</h3>
+                    <div class="section-summary">
+                        <p>A interação entre antígenos e anticorpos é um processo central no funcionamento do sistema
+                            imunológico. Quando um antígeno invade o organismo, células especializadas chamadas
+                            linfócitos B reconhecem a ameaça e começam a produzir anticorpos específicos para aquele
+                            antígeno. Esses anticorpos podem neutralizar diretamente o invasor, bloqueando sua
+                            capacidade de infectar células, ou atuar como sinalizadores para que outras células do
+                            sistema imunológico, como os macrófagos e células natural killer, destruam o antígeno. Além
+                            disso, o organismo possui memória imunológica: uma vez que os linfócitos B produziram
+                            anticorpos contra determinado antígeno, eles armazenam informações para respostas mais
+                            rápidas e eficientes em futuras exposições. Esse mecanismo é a base da imunização, que
+                            protege contra doenças como gripe, sarampo e hepatite.</p>
+                    </div>
+                </section>
+
+                <section id="curiosidade" class="py-4">
+                    <h3 class="h5 section-title">Curiosidade</h3>
+                    <div class="section-summary">
+                        <p>Uma característica fascinante dos anticorpos é sua alta especificidade: cada tipo de
+                            anticorpo é capaz de reconhecer apenas um tipo específico de antígeno. Essa precisão é
+                            comparável a uma chave que se encaixa perfeitamente em uma fechadura. Além disso, o corpo
+                            humano possui milhões de anticorpos diferentes, capazes de enfrentar uma enorme variedade de
+                            ameaças. Essa diversidade é resultado de processos complexos de recombinação genética
+                            durante o desenvolvimento dos linfócitos B. Curiosamente, alguns anticorpos podem permanecer
+                            no organismo por anos, oferecendo imunidade duradoura, enquanto outros são produzidos
+                            temporariamente em resposta a infecções agudas. Essa especificidade e memória imunológica
+                            são fundamentais para o desenvolvimento de vacinas e terapias baseadas em anticorpos,
+                            permitindo que o sistema imunológico reaja de forma rápida e eficiente a invasores
+                            conhecidos.</p>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="col-lg-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold">Navegação rápida</h3>
+                        <ul class="small mb-0">
+                            <li><a href="#antigenos">O que são Antígenos?</a></li>
+                            <li><a href="#anticorpos">O que são Anticorpos?</a></li>
+                            <li><a href="#interacao">Como ocorre a interação?</a></li>
+                            <li><a href="#curiosidade">Curiosidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <footer class="border-top py-4 mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0">&copy; Sistema Imunológico. Todos os direitos reservados.</p>
+            <p class="mb-0 small">Construído com <a href="https://getbootstrap.com/" class="link-primary">Bootstrap
+                    5</a>.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
